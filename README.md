@@ -1,14 +1,3 @@
 # cljhello
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+A Clojure library designed to estimate Pi. Presently it acts as a Compojure microservice with two endpoints ("/euler" and "/leibniz"). These return PNG data of a scatter plot built by Incanter, which plots estimates of Pi made with increasing numbers of terms in the series, up to a maximum amount. The default maximum number of terms in each series is 100, but this can be set with the "size" param in the HTTP request. For instance "/euler?size=40" will return a PNG scatter plot of Euler's series, with an estimate for n=1, n=2, ..., n=40.
