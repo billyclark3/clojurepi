@@ -1,3 +1,3 @@
-# cljhello
+# Pi Estimate with Clojure
 
-A Clojure library designed to estimate Pi and compare the performance of different series representations of the irrational number. Presently the application acts as a Compojure microservice with two endpoints ("/euler" and "/leibniz"), representing two representations of Pi as infinite series. Each of these returns PNG data of a scatter plot built by Incanter, which plots estimates of Pi made with increasing numbers of terms in the given series representation, up to a maximum amount. The default maximum number of terms in each series is 100, but this can be set with the "size" param in the HTTP request. For instance "/euler?size=40" will return a PNG scatter plot of Euler's series, with an estimate for n=1, n=2, ..., n=40.
+Pi estimation web service, served via Compojure.
